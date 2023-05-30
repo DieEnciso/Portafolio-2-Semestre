@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Denuncia de pensión alimenticia</title>
+    <style>
+      /* Estilos CSS */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      
+      input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Denuncia de pensión alimenticia</h1>
+      <form>
+        <label for="nombre">Nombre completo del padre o madre responsable del pago:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="cedula">Número de cédula:</label>
+        <input type="text" id="cedula" name="cedula" required>
+        
+        <label for="telefono">Número de teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+        
+        <label for="correo">Correo electrónico:</label>
+        <input type="text" id="correo" name="correo" required>
+        
+        <label for="direccion">Dirección:</label>
+        <textarea id="direccion" name="direccion" rows="5" required></textarea>
+        
+        <label for="motivo">Motivo de la denuncia:</label>
+        <textarea id="motivo" name="motivo" rows="10" required></textarea>
+        
+        <input type="submit" value="Enviar denuncia">
+      </form>
+    </div>
+  </body>
+</html>
